@@ -4,3 +4,34 @@ nav a { color: white; text-decoration: none; font-weight: bold; }
 section { padding: 20px; background: white; margin-bottom: 20px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
 button { background: #8B4513; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
 .card { border: 1px solid #D2B48C; padding: 15px; margin: 10px 0; border-radius: 10px; }
+
+.card, section {
+    background: white;
+    border-radius: 12px; /* Smoother, more organic corners */
+    /* Soft shadow to create lift */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.08); 
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+body {
+    max-width: 800px; /* Keeps the content centered and readable */
+    margin: 0 auto;   /* Centers the entire site on the screen */
+    padding: 40px 20px;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* The element "lifts" up */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow grows */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+    font-family: 'Lora', serif; /* Use a serif font for that "traditional" ayurveda feel */
+    line-height: 1.6;          /* Increases vertical space between lines for readability */
+}
