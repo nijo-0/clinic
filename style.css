@@ -1,9 +1,7 @@
-/* 1. Imports & Global Reset */
+/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;600&display=swap');
 
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
     background-color: #f4f4f0;
@@ -17,7 +15,7 @@ body {
     margin-right: auto;
 }
 
-/* 2. Navigation Bar */
+/* Nav */
 nav {
     background: #2d3e1a;
     padding: 15px 25px;
@@ -28,67 +26,36 @@ nav {
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: opacity 0.2s;
-}
+nav a { color: #ffffff; text-decoration: none; font-weight: 600; }
+nav a:hover { opacity: 0.8; }
 
-nav a:hover {
-    opacity: 0.8;
-}
-
-/* 3. Sections & Depth */
-section {
+/* Sections & Cards with Movement */
+section, .card {
     background: #ffffff;
-    padding: 40px;
+    padding: 30px;
     margin-bottom: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: #2d3e1a;
-    margin-top: 0;
-}
-
-/* 4. Cards */
-.card {
-    border: 1px solid #e0dcd0;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-/* 5. Buttons */
-button {
-    background: #8b4513;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: background 0.2s;
-}
+h1, h2, h3 { font-family: 'Playfair Display', serif; color: #2d3e1a; }
 
-button:hover {
-    background: #6f370f;
-}
-
-.placeholder {
-    padding: 20px;
-    background: #f9f9f9;
-    border: 2px dashed #ccc;
-    text-align: center;
-    color: #888;
+/* Placeholder for Images */
+.image-placeholder {
+    width: 100%;
+    height: 250px;
+    background: #e0dcd0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    color: #555;
+    font-style: italic;
 }
