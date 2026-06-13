@@ -1,16 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="style.css"><title>Gallery | Kizhakkeveetil</title></head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery & Reviews — Kizhakkeveetil Ayurveda & Physiotherapy Center</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> <a href="team.html">Team</a> 
-        <a href="gallery.html">Gallery & Reviews</a> <a href="contact.html">Contact</a>
-    </nav>
-    <section>
-        <h2>Clinic Gallery</h2>
-        <div class="card">Clinic Images Here</div>
-        <h2>Patient Reviews</h2>
-        <div class="card">Review Screenshots Here</div>
-    </section>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-leaf">&#9753;</span>
+        <span class="logo-text">Kizhakkeveetil</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">A Glimpse Within</p>
+      <h1 class="page-hero-title">Gallery &amp; <em>Reviews</em></h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-icon">&#10047;</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="page-hero-sub">Step inside our sanctuary of healing, and hear from those whose lives have changed.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery-section">
+    <div class="section-inner">
+      <div class="philosophy-label">
+        <span class="label-line"></span>
+        <span>The Space</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title">Our <em>Clinic</em></h2>
+
+      <!--
+        ═══════════════════════════════════════════════════════
+        GALLERY IMAGES — Replace each src with your clinic photo paths.
+        You can add or remove <div class="gallery-item"> blocks as needed.
+        Recommended: at least 6 photos for a good grid appearance.
+        ═══════════════════════════════════════════════════════
+      -->
+      <div class="gallery-grid">
+
+        <div class="gallery-item gallery-large">
+          <img src="gallery-1.jpg" alt="Clinic exterior" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Clinic Exterior</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery-2.jpg" alt="Reception area" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Reception</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery-3.jpg" alt="Treatment room" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Treatment Room</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery-4.jpg" alt="Ayurveda therapy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Ayurveda Therapy</div>
+        </div>
+
+        <div class="gallery-item gallery-large">
+          <img src="gallery-5.jpg" alt="Physiotherapy room" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Physiotherapy Suite</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery-6.jpg" alt="Herbal pharmacy" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Herbal Pharmacy</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery-7.jpg" alt="Meditation garden" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Garden</div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="gallery-8.jpg" alt="Clinic interior" onerror="this.parentElement.classList.add('gallery-placeholder')" />
+          <div class="gallery-caption">Interior</div>
+        </div>
+
+      </div>
+      <!-- ═══════════════════════════════════════════════════════ -->
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews-section">
+    <div class="section-inner">
+      <div class="philosophy-label">
+        <span class="label-line"></span>
+        <span>Patient Voices</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title">What Our <em>Patients Say</em></h2>
+
+      <!--
+        ═══════════════════════════════════════════════════════
+        PATIENT REVIEWS — Replace each review with real testimonials.
+        You can add or remove <div class="review-card"> blocks.
+        Fields to edit: stars, review text, patient name, location.
+        ═══════════════════════════════════════════════════════
+      -->
+      <div class="reviews-grid">
+
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">
+            "&#10077; [Replace with a real patient review. Describe their experience, the treatment they received, and how it helped them. Genuine testimonials build trust.] &#10078;"
+          </p>
+          <div class="review-author">
+            <div class="review-author-info">
+              <strong>[Patient Name]</strong>
+              <span>[Location / Treatment received]</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">
+            "&#10077; [Replace with a second patient review here. Consider including a review from a physiotherapy patient to balance with Ayurveda testimonials.] &#10078;"
+          </p>
+          <div class="review-author">
+            <div class="review-author-info">
+              <strong>[Patient Name]</strong>
+              <span>[Location / Treatment received]</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">
+            "&#10077; [Replace with a third patient review. You could highlight a long-term patient's journey or a particularly meaningful recovery story.] &#10078;"
+          </p>
+          <div class="review-author">
+            <div class="review-author-info">
+              <strong>[Patient Name]</strong>
+              <span>[Location / Treatment received]</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">
+            "&#10077; [Fourth review placeholder. Add as many reviews as you have genuine testimonials for. Remove unused cards.] &#10078;"
+          </p>
+          <div class="review-author">
+            <div class="review-author-info">
+              <strong>[Patient Name]</strong>
+              <span>[Location / Treatment received]</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- ═══════════════════════════════════════════════════════ -->
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">&#9753;</span>
+        <span>Kizhakkeveetil Ayurveda &amp; Physiotherapy Center</span>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="team.html">Team</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Kizhakkeveetil. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,22 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Our Team</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team — Kizhakkeveetil Ayurveda & Physiotherapy Center</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <nav>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-leaf">&#9753;</span>
+        <span class="logo-text">Kizhakkeveetil</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="team.html" class="active">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="hero-eyebrow">The Healers</p>
+      <h1 class="page-hero-title">Our <em>Team</em></h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-icon">&#10047;</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="page-hero-sub">A team of dedicated practitioners bridging the wisdom of Ayurveda with the science of modern physiotherapy.</p>
+    </div>
+  </section>
+
+  <!-- TEAM MEMBERS -->
+  <section class="team-section">
+    <div class="section-inner">
+
+      <!-- ═══════════════════════════════════════════
+           MEMBER 1 — AYURVEDA DOCTOR
+           Replace: photo path, name, qualifications, bio text
+      ═══════════════════════════════════════════ -->
+      <div class="team-card featured">
+        <div class="team-photo-wrap">
+          <!-- Replace 'doctor-photo.jpg' with the actual image file name -->
+          <img src="doctor-photo.jpg" alt="Ayurveda Doctor" class="team-photo" onerror="this.parentElement.classList.add('photo-placeholder')" />
+          <div class="photo-placeholder-text">Doctor Photo<br /><small>Replace src with image path</small></div>
+        </div>
+        <div class="team-bio">
+          <span class="team-role-tag">Chief Ayurveda Physician</span>
+          <!-- Replace with doctor's full name -->
+          <h2 class="team-name">Dr. [Doctor's Full Name]</h2>
+          <!-- Replace with qualifications, e.g. BAMS, MD (Ayu) -->
+          <p class="team-quals">[Qualifications, e.g. BAMS, MD (Ayu)]</p>
+          <div class="team-divider"></div>
+          <!--
+            EDIT THIS SECTION — Replace with the doctor's biography.
+            Include: years of experience, specializations, philosophy,
+            notable training or institutions.
+          -->
+          <p class="team-bio-text">
+            [Write the doctor's biography here. Include their educational background, years of experience, areas of specialization in Ayurveda, and their personal healing philosophy. You can describe notable training they have received or institutions they have worked with.]
+          </p>
+          <p class="team-bio-text">
+            [Add a second paragraph if needed — perhaps about their approach to patient care or a particular Ayurvedic tradition they follow.]
+          </p>
+          <!-- ═══════════════════════════════════════════ -->
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════
+           MEMBER 2 — PHYSIOTHERAPIST
+           Replace: photo path, name, qualifications, bio text
+      ═══════════════════════════════════════════ -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <!-- Replace 'physio-photo.jpg' with the actual image file name -->
+          <img src="physio-photo.jpg" alt="Physiotherapist" class="team-photo" onerror="this.parentElement.classList.add('photo-placeholder')" />
+          <div class="photo-placeholder-text">Physio Photo<br /><small>Replace src with image path</small></div>
+        </div>
+        <div class="team-bio">
+          <span class="team-role-tag">Physiotherapist</span>
+          <!-- Replace with physiotherapist's full name -->
+          <h2 class="team-name">[Physiotherapist's Full Name]</h2>
+          <!-- Replace with qualifications, e.g. BPT, MPT -->
+          <p class="team-quals">[Qualifications, e.g. BPT, MPT (Orthopaedics)]</p>
+          <div class="team-divider"></div>
+          <!--
+            EDIT THIS SECTION — Replace with the physiotherapist's biography.
+          -->
+          <p class="team-bio-text">
+            [Write the physiotherapist's biography here. Mention their qualifications, clinical experience, areas of expertise — such as orthopaedic rehab, neurological physiotherapy, or sports injuries — and their approach to integrated care alongside Ayurveda.]
+          </p>
+          <!-- ═══════════════════════════════════════════ -->
+        </div>
+      </div>
+
+      <!-- ═══════════════════════════════════════════
+           MEMBER 3 — PHARMACIST / STAFF
+           Replace: photo path, name, qualifications, bio text
+      ═══════════════════════════════════════════ -->
+      <div class="team-card">
+        <div class="team-photo-wrap">
+          <!-- Replace 'pharmacist-photo.jpg' with the actual image file name -->
+          <img src="pharmacist-photo.jpg" alt="Pharmacist" class="team-photo" onerror="this.parentElement.classList.add('photo-placeholder')" />
+          <div class="photo-placeholder-text">Pharmacist Photo<br /><small>Replace src with image path</small></div>
+        </div>
+        <div class="team-bio">
+          <span class="team-role-tag">Clinical Pharmacist</span>
+          <!-- Replace with pharmacist's full name -->
+          <h2 class="team-name">[Pharmacist's Full Name]</h2>
+          <!-- Replace with qualifications -->
+          <p class="team-quals">[Qualifications, e.g. D.Pharm / B.Pharm]</p>
+          <div class="team-divider"></div>
+          <!--
+            EDIT THIS SECTION — Replace with the pharmacist's biography.
+          -->
+          <p class="team-bio-text">
+            [Write the pharmacist's profile here. Describe their role in preparing classical Ayurvedic medicines, their expertise in herbal formulations, and their experience in the pharmacy.]
+          </p>
+          <!-- ═══════════════════════════════════════════ -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">&#9753;</span>
+        <span>Kizhakkeveetil Ayurveda &amp; Physiotherapy Center</span>
+      </div>
+      <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="team.html">Team</a>
-    </nav>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Kizhakkeveetil. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <section>
-        <h2>Our Practitioners</h2>
-        <div class="card">
-            <div class="image-placeholder" style="height:150px;">PHOTO: Doctor</div>
-            <h3>Dr. Name</h3>
-            <p>Edit: Professional bio and qualifications go here.</p>
-        </div>
-    </section>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,21 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <title>Kizhakkeveetil Ayurveda</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kizhakkeveetil Ayurveda & Physiotherapy Center</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <nav>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-leaf">&#9753;</span>
+        <span class="logo-text">Kizhakkeveetil</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <!-- Replace the src below with your clinic image path -->
+    <img src="clinic-hero.jpg" alt="Kizhakkeveetil Clinic" class="hero-bg" id="heroBg" onerror="this.style.display='none'" />
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. in Kerala's Healing Tradition</p>
+      <h1 class="hero-title">Kizhakkeveetil<br /><em>Ayurveda & Physiotherapy</em><br />Center</h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-icon">&#10047;</span>
+        <span class="divider-line"></span>
+      </div>
+      <address class="hero-address">
+        Vilangara, Oyur Kottarakara Road<br />
+        Odanavattom, Kollam – 691512, Kerala
+      </address>
+      <a href="contact.html" class="btn-primary">Find Us</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY / MESSAGE -->
+  <section class="philosophy" id="philosophy">
+    <div class="section-inner philosophy-inner">
+      <div class="philosophy-label">
+        <span class="label-line"></span>
+        <span>Our Philosophy</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title">Rooted in Ancient Wisdom.<br /><em>Guided by Modern Care.</em></h2>
+
+      <!-- ═══════════════════════════════════════════════════════════════════
+           EDIT THIS SECTION — Replace the placeholder text below with your
+           clinic's own message, philosophy, or mission statement.
+           You can use multiple <p> tags for paragraphs.
+      ═══════════════════════════════════════════════════════════════════ -->
+      <div class="philosophy-text">
+        <p class="philosophy-quote">
+          "&#10077; <em>Your message or philosophy goes here. Edit this text to share the founding story, healing vision, or the values that guide every treatment at Kizhakkeveetil.</em> &#10078;"
+        </p>
+        <p class="philosophy-body">
+          Add a supporting paragraph here — perhaps about your commitment to authentic Ayurvedic practice, the philosophy behind combining Ayurveda and Physiotherapy, or a personal note from the founders. This space is yours to fill.
+        </p>
+      </div>
+      <!-- ═══════════════════════════════════════════════════════════════════ -->
+
+      <a href="team.html" class="btn-secondary">Meet Our Healers</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-inner">
+      <div class="philosophy-label">
+        <span class="label-line"></span>
+        <span>What We Offer</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title">Therapies &amp; Treatments</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">&#127807;</div>
+          <h3>Panchakarma</h3>
+          <p>Deep detoxification and rejuvenation through classical Ayurvedic therapies tailored to your constitution.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#129544;</div>
+          <h3>Physiotherapy</h3>
+          <p>Evidence-based rehabilitation for musculoskeletal conditions, sports injuries, and post-surgical recovery.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#127774;</div>
+          <h3>Abhyanga &amp; Shirodhara</h3>
+          <p>Classical oil therapies to restore balance, calm the nervous system, and nourish body and mind.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#127807;</div>
+          <h3>Herbal Formulations</h3>
+          <p>In-house pharmacy offering authentic Kerala classical medicines prepared with traditional methods.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#9728;</div>
+          <h3>Njavara Kizhi</h3>
+          <p>Bolus massage with medicated rice, effective for neurological disorders and musculoskeletal conditions.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">&#10052;</div>
+          <h3>Spine &amp; Joint Care</h3>
+          <p>Integrated Ayurveda–Physiotherapy protocols for chronic pain, spondylosis, and joint disorders.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip">
+    <div class="section-inner cta-inner">
+      <h2>Begin Your Healing Journey</h2>
+      <p>Rooted in Kerala's oldest healing tradition. Ready for you today.</p>
+      <a href="contact.html" class="btn-primary">Book a Consultation</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-leaf">&#9753;</span>
+        <span>Kizhakkeveetil Ayurveda &amp; Physiotherapy Center</span>
+      </div>
+      <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="team.html">Team</a>
-    </nav>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Kizhakkeveetil. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <section>
-        <div class="image-placeholder">IMAGE: Clinic Exterior</div>
-        <h1>Kizhakkeveetil Ayurveda & Physiotherapy</h1>
-        <p>Providing traditional, nature-centered healing for the Odanavattom community.</p>
-        <h3>Clinic Address</h3>
-        <p>Vilangara, Oyur Kottarakara Road, Odanavattom, Kollam-691512</p>
-    </section>
+  <script src="script.js"></script>
 </body>
 </html>
