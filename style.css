@@ -396,6 +396,150 @@ address { font-style: normal; }
   margin-right: auto;
 }
 
+/* ─── FOUNDERS (inside Philosophy section) ───────────────────── */
+.founders {
+  width: 100%;
+  margin-top: 56px;
+  margin-bottom: 48px;
+}
+
+.founders-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-align: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.founders-label::before,
+.founders-label::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.4;
+}
+
+.founders-label::before { right: calc(50% + 100px); }
+.founders-label::after  { left:  calc(50% + 100px); }
+
+.founders-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.founder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+.founder-photo-wrap {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--moss);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.founder-card:hover .founder-photo {
+  transform: scale(1.04);
+}
+
+/* hide real image when broken, show placeholder text */
+.founder-photo-wrap.founder-placeholder .founder-photo {
+  display: none;
+}
+
+.founder-placeholder-text {
+  display: none;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: rgba(26, 60, 52, 0.45);
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.founder-placeholder-text small {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.72rem;
+  opacity: 0.7;
+}
+
+.founder-photo-wrap.founder-placeholder .founder-placeholder-text {
+  display: block;
+}
+
+.founder-info {
+  width: 100%;
+  padding: 28px 28px 32px;
+  text-align: center;
+  border-top: 2px solid var(--gold);
+  background: var(--white);
+}
+
+.founder-name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.founder-line {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-style: italic;
+  color: #6a5240;
+  line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .founders-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+
+  .founders-label::before,
+  .founders-label::after { display: none; }
+}
+
 /* ─── SERVICES ───────────────────────────────────────────────── */
 .services {
   background: var(--sand);
