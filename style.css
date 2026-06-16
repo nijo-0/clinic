@@ -1201,11 +1201,97 @@ address { font-style: normal; }
   }
 }
 
-/* ─── LOGO CHANGE ─────────────────────────────────────────── */
+/* ─── LOGO CHANGE ─────────────────────────────────────────────── */
 
 .logo-img {
   height: 70px;
   width: auto;
   display: block;
   object-fit: contain;
+}
+
+/* New Large Showcase Block Style */
+
+.large-showcase-section {
+  padding: 0 20px 60px 20px; /* Aligns with the bottom margins of services section */
+  background-color: transparent; 
+}
+
+.large-showcase-section .section-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.showcase-card {
+  background: #ffffff;
+  border-radius: 8px; /* Matches standard premium card rounding */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft premium shadow matching image */
+  width: 100%;
+  max-width: 800px; /* Makes it prominently bigger than individual service boxes on desktop */
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.showcase-image-wrapper {
+  width: 100%;
+  height: 450px; /* High-visibility height for large screens */
+  overflow: hidden;
+}
+
+.showcase-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image doesn't distort or warp */
+  display: block;
+}
+
+.showcase-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.showcase-title {
+  font-family: 'Cormorant Garamond', serif; /* Keeps typography uniform */
+  font-size: 2rem;
+  color: #0b3c26; /* Deep green tone to match your branding layout */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.showcase-text {
+  font-family: 'Jost', sans-serif;
+  font-size: 1.05rem;
+  color: #555555;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Mobile Breakpoint Configuration */
+@media (max-width: 768px) {
+  .large-showcase-section {
+    padding: 0 20px 40px 20px;
+  }
+  
+  .showcase-card {
+    max-width: 100%; /* Automatically scales down to match the standard mobile card sizing */
+  }
+
+  .showcase-image-wrapper {
+    height: 250px; /* Scaled down height for smaller mobile aspect ratios */
+  }
+
+  .showcase-content {
+    padding: 25px 20px;
+  }
+
+  .showcase-title {
+    font-size: 1.6rem;
+  }
+  
+  .showcase-text {
+    font-size: 0.95rem;
+  }
 }
