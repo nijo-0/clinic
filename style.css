@@ -1200,3 +1200,12 @@ address { font-style: normal; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ─── LOGO CHANGE ─────────────────────────────────────────── */
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
