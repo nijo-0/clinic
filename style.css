@@ -1302,3 +1302,48 @@ address { font-style: normal; }
     font-size: 0.95rem;
   }
 }
+
+/* Contact Card Grid Alignment Fix */
+
+
+.contact-methods-container {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  text-align: left; /* Aligns labels and values structurally */
+}
+
+.contact-method-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Jost', sans-serif;
+  font-size: 1.05rem;
+}
+
+.method-label {
+  font-weight: 300;
+  color: #4e4e4e; /* Matches theme green */
+  min-width: 95px; /* Ensures the colons and numbers align vertically */
+  text-transform: capitalize;
+}
+
+.method-link {
+  color: #b38f4f; /* Matches your existing golden accent color */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.method-link:hover {
+  color: #0b3c26; /* Flips color on hover state */
+  text-decoration: underline;
+}
+
+/* Center card content overall while keeping data layout structured */
+.phone-contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
