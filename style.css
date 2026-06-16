@@ -1210,7 +1210,9 @@ address { font-style: normal; }
   object-fit: contain;
 }
 
-/* New Large Showcase Block Style */
+/* ==========================================================================
+   NEW LARGE SHOWCASE SECTION (Emblem & Signature Text)
+   ========================================================================== */
 
 .large-showcase-section {
   padding: 0 20px 60px 20px; /* Aligns with the bottom margins of services section */
@@ -1227,9 +1229,9 @@ address { font-style: normal; }
 .showcase-card {
   background: #ffffff;
   border-radius: 8px; /* Matches standard premium card rounding */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft premium shadow matching image */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Soft premium shadow */
   width: 100%;
-  max-width: 800px; /* Makes it prominently bigger than individual service boxes on desktop */
+  max-width: 800px; /* Prominently bigger than individual service boxes on desktop */
   overflow: hidden;
   transition: transform 0.3s ease;
 }
@@ -1237,13 +1239,17 @@ address { font-style: normal; }
 .showcase-image-wrapper {
   width: 100%;
   height: 450px; /* High-visibility height for large screens */
+  background-color: #ffffff; /* Clean background behind the uncropped logo */
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .showcase-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image doesn't distort or warp */
+  object-fit: contain; /* Displays the entire emblem safely without clipping */
   display: block;
 }
 
@@ -1255,7 +1261,7 @@ address { font-style: normal; }
 .showcase-title {
   font-family: 'Cormorant Garamond', serif; /* Keeps typography uniform */
   font-size: 2rem;
-  color: #0b3c26; /* Deep green tone to match your branding layout */
+  color: #0b3c26; /* Deep green tone matching your branding */
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -1269,18 +1275,19 @@ address { font-style: normal; }
   margin: 0 auto;
 }
 
-/* Mobile Breakpoint Configuration */
+/* Responsive Breakpoint for Mobile Devices */
 @media (max-width: 768px) {
   .large-showcase-section {
     padding: 0 20px 40px 20px;
   }
   
   .showcase-card {
-    max-width: 100%; /* Automatically scales down to match the standard mobile card sizing */
+    max-width: 100%; /* Automatically scales down to match individual card widths */
   }
 
   .showcase-image-wrapper {
-    height: 250px; /* Scaled down height for smaller mobile aspect ratios */
+    height: 280px; /* Reduced container height for better mobile proportions */
+    padding: 10px; /* Gives the emblem a tiny bit of breathing room on small screens */
   }
 
   .showcase-content {
